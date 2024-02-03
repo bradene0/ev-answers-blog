@@ -15,7 +15,7 @@ const RatioSkeleton = styled(Skeleton)`
 const fallback = <RatioSkeleton animated radius={3} overflow="hidden" />
 
 export default function OpenGraphInput(props: ObjectInputProps) {
-  const value = useDeferredValue(props.value)
+  const value = useDeferredValue(props.value)//modify?
   return (
     <Stack space={2}>
       <Suspense fallback={fallback}>
