@@ -18,11 +18,11 @@ export default function OpenGraphInput(props: ObjectInputProps) {
   const value = useDeferredValue(props.value)//modify?
   return (
     <Stack space={2}>
-      <Suspense fallback={fallback}>
+      <Suspense fallback={fallback}> 
         {value ? <OpenGraphPreview {...(value as any)} /> : fallback}
       </Suspense>
       {props.renderDefault(props)}
     </Stack>
   )
 }
-//need to update this, open graph image
+//need to update this, open graph image, use generator
