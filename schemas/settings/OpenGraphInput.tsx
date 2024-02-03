@@ -25,4 +25,4 @@ export default function OpenGraphInput(props: ObjectInputProps) {
     </Stack>
   )
 }
-//need to update this
+//need to update this, open graph image
